@@ -6825,6 +6825,8 @@ All notable changes to this project will be documented in this file.
 - *(readme)* Serve sponsor images from Coollabs CDN
 - Update changelog
 - *(release)* Document SHA image promotion workflow
+- Update changelog
+- *(release)* Clarify branch strategy and SHA build flow
 
 ### ⚡ Performance
 
@@ -7774,6 +7776,7 @@ All notable changes to this project will be documented in this file.
 - Inspect PR context (#10834)
 - *(release)* Promote SHA-tagged images on release
 - *(release)* Promote SHA-tagged images on release (#10988)
+- Support main branch build and changelog workflows
 
 ### ◀️ Revert
 
