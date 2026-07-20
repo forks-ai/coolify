@@ -1474,6 +1474,10 @@ All notable changes to this project will be documented in this file.
 - *(api)* Add service database management endpoints
 - Add ClickHouse backups and cloud ops tools
 - *(api)* Require POST for state-changing endpoints
+- *(backups)* Add scheduled persistent volume backups
+- *(backups)* Support scheduled backups for application storage targets
+- *(api)* Add volume backup schedule delete endpoints
+- *(backups)* Add scheduled storage volume backups (#10946)
 
 ### 🐛 Bug Fixes
 
@@ -5432,6 +5436,17 @@ All notable changes to this project will be documented in this file.
 - Harden Vultr create, Gmail identity, and provider retries
 - *(resources)* Clarify build server hosting restrictions (#10961)
 - *(dev)* Support root bind mounts and LAN Vite access
+- *(backups)* Stop containers during volume backup creation
+- *(backups)* Redirect to executions after manual backup queueing
+- *(backups)* Rename storage backup page heading
+- *(backups)* Move S3 retention settings to retention page
+- *(status)* Prevent health badge row height expansion
+- *(backups)* Show setup prompt when no S3 storage is available
+- *(backups)* Sync Backup Now with live database status
+- *(backups)* Pin S3 per volume execution and harden deletes
+- *(backups)* Allow volume backup delete without password when 2FA off
+- *(backups)* Retain volume backups without server
+- *(backups)* Enforce authorization and safe retention
 
 ### 💼 Other
 
@@ -6628,6 +6643,8 @@ All notable changes to this project will be documented in this file.
 - *(api)* Update service logs endpoint to use sub service name
 - *(api)* Modify service sub container retrieval filter to use coolify.name
 - *(hetzner)* Move advanced options into dropdown
+- *(backups)* Consolidate volume backup retention columns
+- *(backups)* Centralize storage deletion guard
 
 ### 📚 Documentation
 
@@ -6806,6 +6823,8 @@ All notable changes to this project will be documented in this file.
 - *(security)* Document deployment command trust boundary
 - *(readme)* Refresh sponsor listings
 - *(readme)* Serve sponsor images from Coollabs CDN
+- Update changelog
+- *(release)* Document SHA image promotion workflow
 
 ### ⚡ Performance
 
