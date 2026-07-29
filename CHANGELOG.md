@@ -5449,6 +5449,7 @@ All notable changes to this project will be documented in this file.
 - *(backups)* Enforce authorization and safe retention
 - *(traefik)* Track v3.7 security updates
 - *(traefik)* Track v3.7 and security patch updates (#11029)
+- *(domains)* Allow clearing resource domains without TypeError (#11083)
 
 ### 💼 Other
 
@@ -6832,6 +6833,7 @@ All notable changes to this project will be documented in this file.
 - *(release)* Clarify branch strategy and SHA build flow
 - Update changelog
 - Update changelog
+- Update changelog
 
 ### ⚡ Performance
 
@@ -7785,6 +7787,7 @@ All notable changes to this project will be documented in this file.
 - Prepare for PR
 - Tag v4.x SHA images as edge
 - *(images)* Add edge tag for v4.x SHA builds (#11022)
+- Prepare for PR
 
 ### ◀️ Revert
 
