@@ -1479,6 +1479,100 @@ All notable changes to this project will be documented in this file.
 - *(api)* Add volume backup schedule delete endpoints
 - *(backups)* Add scheduled storage volume backups (#10946)
 - *(services)* Shared Redis cache for service templates (#11094)
+- *(ui)* Improve global search with UUID and PR support
+- *(domains)* Add per-domain noindex support
+- *(v5)* Add Inertia app shell with Flux health
+- *(container)* Support comma-separated roles
+- *(dev)* Add coold VM dev workflow
+- *(dev)* Bootstrap coold VMs via cooldctl
+- *(v5)* Add coolify CLI version check
+- *(v5)* Add server clusters and CLI bootstrap
+- *(dev)* Add example nginx connectivity commands
+- *(v5)* Add shadcn/ui with button, select, separator, and navbar
+- *(v5)* Move clusters to dedicated page and remove CLI services
+- *(v5)* Add WireGuard and coold/corrosion config to clusters/servers
+- *(v5)* Add server bootstrap job with realtime cluster broadcasting
+- *(v5)* Add mesh app canvas
+- *(v5)* Add application ingress routing
+- *(v5)* Add dashboard ingress routing controls
+- *(v5)* Use bridged Lima hosts for coold dev
+- *(v5)* Add app configuration inspector
+- *(v5)* Sync resource firewall rules via Flux
+- *(dev)* Include firewall capabilities in flux defaults
+- *(v5)* Deploy nginx applications through Flux
+- *(v5)* Show server stale status and coold logs
+- *(v5)* Sync server status and ingress access
+- *(v5)* Expose corrosion and firewall diagnostics
+- *(v5)* Use resource uuids at boundaries
+- *(v5)* Add server reconciliation and canvas APIs
+- *(v5)* Add coold restart action
+- *(v5)* Authorize creates, deep-link selection, list apps in v4
+- *(v5)* Gate V5 to development environments only
+- *(v5)* Add Inertia React infrastructure management (#10987)
+- Self-hosted GitLab Apps OAuth integration
+- *(gitlab)* Add custom public endpoint for OAuth redirect
+- *(api)* Add GitLab Apps CRUD endpoints
+- *(github)* Add GitHub App connection testing
+- GitLab App source (#10538)
+- *(services)* Add Buzz one-click service template (#11020)
+- *(mcp)* Add resource diagnostics and deployment controls (#11000)
+- *(ui)* Shadow UI redesign, domain management, and DNS autoconfigure (#11119)
+- *(ui)* Scrollable resource tabs and railpack default
+- *(ui)* Polish domains, storage, env vars and resource nav
+- *(ui)* Polish email modal, search loading, and volume tables
+- *(volume-backups)* Add service backup UI and polish layouts
+- *(ui)* Unify team, security, and notification settings layouts
+- *(ui)* Unify resource nav sidebars and polish project layouts
+- *(ui)* OS-aware search shortcuts and mobile settings titles
+- *(ui)* Expand server sidebar and extract status summary
+- *(ui)* Dock resource actions in top bar, user menu in sidebar
+- *(ui)* Show internal hostname and densify config UI
+- *(ui)* Align auth pages to shared shell and truncate team names
+- *(ui)* Unify brand accents and polish shared controls
+- *(ui)* Polish domains UX and dark-mode loading accents
+- *(ui)* Restyle public access domains summary
+- *(ui)* Add shared table controls and multi-select filters
+- *(ui)* Show reicon fallback for services without a logo
+- *(ui)* Add tile icon set for the resource picker
+- *(ui)* Use dedicated tile icons for application and database resources
+- *(ui)* Reorder git application types to surface deploy key earlier
+- *(ui)* Rewrite resource picker titles and descriptions
+- *(ui)* Revamp new resource page (#11140)
+- *(ui)* Add custom theme color and polish light-mode theming
+- *(ui)* Unify status summaries, tooltips, and resource headings
+- *(service)* Warn when required environment variables are missing
+- *(ui)* Toggle Server Timing HUD and link missing env badge
+- *(service)* Add Celld service template for Deno Durable Objects
+- *(ui)* Show S3 backup status and move domain action
+- *(terminal)* Lazy-load targets and polish theme UI
+- *(ui)* Add Open server links on destination cards
+- *(server)* Auto-resolve Sentinel URL and polish setup UI
+- *(server)* Fall back Sentinel URL to request host
+- *(ui)* Add collapsible advanced settings and enlarge compose modal
+- *(ui)* Polish DB public access, backups, and nav
+- *(profile)* Add uploadable avatars with local/S3 storage
+- *(service)* Add Celld one-click service template (#11155)
+- *(resources)* Add cross-server resource migration (dev-only) (#11165)
+- *(servers)* Add cross-instance server migration (#11075)
+- *(service)* Unify database and storage backups on one page
+- *(servers)* Separate connection and provisioning options
+- *(ui)* Add volume backup storage controls and grouped navigation
+- *(dashboard)* Add server metrics charts and polish UI feedback
+- *(service)* Update seaweedfs
+- *(service)* Update forgejo from v8 to v15 (#10639)
+- *(service)* Add termix template (#11090)
+- *(service)* Upgrade opnform to v2.0 (#10600)
+- *(service)* Add InfluxDB (#11103)
+- *(service)* Add stalwart mail server (#10984)
+- *(service)* Update sparkyfitness from v0.15 to version 1.6.1 (#9927)
+- *(dashboard)* Refresh metrics and color server status indicators
+- *(domains)* Add inline indexing and redirect controls
+- *(domains)* Edit compose redirect direction in domain modal
+- *(domains)* Add per-domain noindex support (#10908)
+- *(search)* Preselect first result in resource picker
+- *(domains)* Add structured URL editing and responsive domain controls
+- *(ui)* Improve terminal mobile UX and server status feedback
+- *(release)* Rebuild stable images from reviewed draft releases
 
 ### 🐛 Bug Fixes
 
@@ -5451,6 +5545,70 @@ All notable changes to this project will be documented in this file.
 - *(traefik)* Track v3.7 security updates
 - *(traefik)* Track v3.7 and security patch updates (#11029)
 - *(domains)* Allow clearing resource domains without TypeError (#11083)
+- *(dev)* Rely on default flux dev capabilities
+- *(dev)* Cache bust mutable coold nightly assets
+- *(v5)* Rename nginx action to deploy
+- *(v5)* Preserve firewall directions when editing ports
+- *(v5)* Rotate agent tokens every fifteen minutes
+- *(v5)* Backfill missing canvas uuid columns
+- *(v5)* Defer production runtime activation
+- *(helpers)* Prevent warnings when loading database helpers
+- *(security)* Enforce GitLab App authorization parity with GitHub
+- *(ui)* Align GitLab App create modal with GitHub
+- *(ui)* Simplify GitLab source setup view
+- *(ui)* Place GitLab group name after application secret
+- *(ui)* Put Save Credentials beside Step 2 heading
+- *(ui)* Rename GitLab setup submit button to Save
+- *(gitlab)* Reload application secret after save
+- *(ui)* Move GitLab public endpoint controls into step 2
+- *(ui)* Remove Public endpoint heading on GitLab setup
+- *(ui)* Show GitLab Connected badge beside title
+- *(security)* Encrypt GitLab webhook token and mask input
+- *(ui)* Show GitHub icon next to GitHub sources
+- *(ui)* Unify incomplete source status as Setup required
+- *(ui)* Show only Connected for finished GitLab sources
+- *(gitlab)* Hide source secrets from unauthorized users
+- *(api)* Secure proxy config, clone volumes, and rollback tags (#11003)
+- *(sources)* Prevent 500 when deleting GitLab/GitHub apps
+- *(sources)* Prevent 500 when deleting GitLab/GitHub apps (#11105)
+- *(backups)* Pin all resolved addresses in one CURLOPT_RESOLVE entry
+- *(backups)* Pin all resolved addresses in one CURLOPT_RESOLVE entry (#11061)
+- *(backups)* Pin a single bracket-free IP for mc --resolve
+- *(backups)* Pin a single bracket-free IP for mc --resolve (#11028)
+- *(compose)* Normalize service-name keys for domains and env vars (#11040)
+- *(realtime)* Force-WS option and polish connection popup UI
+- *(ui)* Reverse collapsed sidebar footer and polish server filter
+- *(ui)* Correct shield-star reicon path geometry
+- *(ui)* Normalize service logos and fix template icon fallbacks
+- *(ui)* Improve tooltip a11y and settings select layout
+- *(domains)* Close edit modal after save and drop Lima seeds
+- *(ui)* Gate copy button on clipboard API support
+- *(ui)* Polish mobile layouts, error pages, and volume backups
+- *(ui)* Keep deployment history columns scrollable on mobile
+- *(ui)* Keep helper popups in visual viewport on mobile
+- *(ui)* Cap helper popup width and share destination status
+- *(server)* Keep resources nav active and show tab loading
+- *(ui)* Mute custom theme input placeholders
+- *(ui)* Hide application domains on compose resource cards
+- *(ui)* Polish create flows for compose and GitHub repos
+- *(ui)* Polish create flows and terminal navigation
+- *(ui)* Use listbox for domain redirects and key terminal canvases
+- *(ui)* Skip hidden global search results in keyboard nav
+- *(services)* Default celld image tag to latest
+- *(ui)* Show loading state on compose validate button
+- *(docker)* Escape Traefik www redirect replacements for Compose
+- *(ui)* Prefer Compose env values and polish error pages
+- *(ui)* Scroll backup tables on mobile and use icon actions
+- *(ui)* Use 100dvh body height and coollabs auth glow
+- *(dev)* Support configurable hosts and light-mode surfaces
+- *(service)* Use the correct health check path for firefly (#10475)
+- *(terminal)* New function name of cookie package
+- *(installer)* Minor grammatical error (#9209)
+- *(ui)* Stabilize domain controls and unify resource navigation
+- *(ui)* Refine overlays, toast actions, and save-state feedback
+- *(profile)* Remove redundant 2FA enabled badge
+- *(release)* Restrict production workflows to v4.x
+- *(release)* Run support image workflows on main
 
 ### 💼 Other
 
@@ -6650,6 +6808,16 @@ All notable changes to this project will be documented in this file.
 - *(backups)* Consolidate volume backup retention columns
 - *(backups)* Centralize storage deletion guard
 - *(ui)* Remove deploy confirmation modals (#11023)
+- *(v5)* Remove Project model and consolidate v5 migrations
+- *(dev)* Replace v5:sync-dev-lima-servers with V5DevLimaSeeder
+- *(v5)* Extract csrfToken into shared lib/csrf.js module
+- *(v5)* Migrate UI primitives from radix-ui to @base-ui/react
+- *(v5)* Migrate frontend from JSX to TypeScript
+- *(v5)* Rename Home to Dashboard and add coollabs brand styles
+- *(v5)* Remove CLI-specific fields and labels from clusters UI
+- *(v5)* Defer builder bootstrap support
+- *(application)* Extract status and internal access components
+- *(ui)* Fill resource logo tiles and support light/dark logo variants
 
 ### 📚 Documentation
 
@@ -6836,6 +7004,8 @@ All notable changes to this project will be documented in this file.
 - Update changelog
 - Update changelog
 - Update changelog
+- Update changelog
+- Remove coold VM dev setup and container roles sections from README
 
 ### ⚡ Performance
 
@@ -6848,6 +7018,7 @@ All notable changes to this project will be documented in this file.
 - *(server)* Optimize destinationsByServer query (#7854)
 - *(breadcrumb)* Optimize queries and simplify navigation to fix OOM (#9048)
 - *(realtime)* Reduce push update churn
+- *(service)* Tune litellm defaults to lower RAM/CPU usage (#10698)
 
 ### 🎨 Styling
 
@@ -6870,6 +7041,8 @@ All notable changes to this project will be documented in this file.
 - *(navbar)* Refine collapsed sidebar spacing
 - *(destination)* Capitalize server label
 - *(api)* Tighten nested server secret visibility checks
+- *(ui)* Use solid sidebar pills instead of accent gradients
+- *(ui)* Refine focus ring thickness and warning color
 
 ### 🧪 Testing
 
@@ -6915,6 +7088,7 @@ All notable changes to this project will be documented in this file.
 - Add move resource API tests
 - *(api)* Assert target env authorization on moves
 - *(github)* Cover PR previews without skip ci
+- *(browser)* Expand config coverage and shared helpers
 
 ### ⚙️ Miscellaneous Tasks
 
@@ -7791,6 +7965,15 @@ All notable changes to this project will be documented in this file.
 - *(images)* Add edge tag for v4.x SHA builds (#11022)
 - Prepare for PR
 - Prepare for PR
+- *(scripts)* Remove conductor setup script
+- *(dev)* Remove bundled cooldctl binary
+- *(backlog)* Remove obsolete local task backlog
+- *(dev)* Add npm clean script for docker compose teardown
+- *(release)* Bump Coolify to 4.3.0 and nightly to 4.3.1
+- *(docker)* Bump cloudflared to 2026.7.3
+- *(docker)* Bump cloudflared to 2026.7.3 (fixes 2 CRITICAL CVEs) (#11145)
+- *(db)* Bump avatar storage migration timestamp
+- *(services)* Regenerate service-templates json files
 
 ### ◀️ Revert
 
