@@ -1573,6 +1573,8 @@ All notable changes to this project will be documented in this file.
 - *(domains)* Add structured URL editing and responsive domain controls
 - *(ui)* Improve terminal mobile UX and server status feedback
 - *(release)* Rebuild stable images from reviewed draft releases
+- *(ui)* Show two-factor status of team members (#11186)
+- *(ui)* Show two-factor status of team members (#11186) (#11192)
 
 ### 🐛 Bug Fixes
 
@@ -7006,6 +7008,7 @@ All notable changes to this project will be documented in this file.
 - Update changelog
 - Update changelog
 - Remove coold VM dev setup and container roles sections from README
+- Update changelog
 
 ### ⚡ Performance
 
