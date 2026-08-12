@@ -5611,6 +5611,10 @@ All notable changes to this project will be documented in this file.
 - *(profile)* Remove redundant 2FA enabled badge
 - *(release)* Restrict production workflows to v4.x
 - *(release)* Run support image workflows on main
+- *(ui)* Raise top bar above open service actions
+- *(ui)* Raise top bar above open service actions (#11197)
+- *(ui)* Expose environment variable settings on mobile
+- *(ui)* Expose environment variable settings on mobile (#11198)
 
 ### 💼 Other
 
@@ -7008,6 +7012,7 @@ All notable changes to this project will be documented in this file.
 - Update changelog
 - Update changelog
 - Remove coold VM dev setup and container roles sections from README
+- Update changelog
 - Update changelog
 
 ### ⚡ Performance
